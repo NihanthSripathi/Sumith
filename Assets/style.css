@@ -1,3 +1,43 @@
 .s_main-img{
     width: 50%;
 }
+.wed-logo{
+    width: 60px;
+}
+
+/* form */
+body {
+    font-family: Arial, sans-serif;
+  }
+  .faq-container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  .faq-header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+  }
+  .faq-item {
+    background-color: #f9f9f9;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+  }
+  .faq-item:not(:last-child) {
+    border-bottom: none;
+  }
+  .faq-question {
+    padding: 16px;
+    background-color: #eee;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .faq-answer {
+    padding: 16px;
+    display: none;
+  }
+/*  */

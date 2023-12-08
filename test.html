@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ Section</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .faq-container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  .faq-header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  .faq-item {
+    background-color: #f9f9f9;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+  }
+  .faq-item:not(:last-child) {
+    border-bottom: none;
+  }
+  .faq-question {
+    padding: 16px;
+    background-color: #eee;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .faq-answer {
+    padding: 16px;
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="faq-container">
+  <div class="faq-header">
+    Frequently Asked Questions (FAQ)
+  </div>
+  
+  <!-- FAQ Item 1 -->
+  <div class="faq-item">
+    <div class="faq-question">
+      Q: What is BrandBoost, and what services does it offer?
+    </div>
+    <div class="faq-answer">
+      BrandBoost is a Ghostwriting and content creation agency specializing in sharing your stories, case studies, and achievements. Arya, the founder, handles all aspects of the agency. We specialize in content creation for startup founders and entrepreneurs, focusing on crafting compelling content for personal brand enhancement.
+    </div>
+  </div>
+  
+  <!-- More FAQ Items... -->
+  
+</div>
+
+<script>
+  // JavaScript for toggling the FAQ answers
+  document.querySelectorAll('.faq-question').forEach(item => {
+    item.addEventListener('click', () => {
+      const answer = item.nextElementSibling;
+      answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+    });
+  });
+</script>
+
+</body>
+</html>
